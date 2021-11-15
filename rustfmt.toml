@@ -1,0 +1,4 @@
+ignore = [
+	# the large files slow formatting down
+	"src/large_tables.rs",
+]

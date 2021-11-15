@@ -1,0 +1,30 @@
+[package]
+name = "simdprune"
+version = "0.1.0"
+authors = ["TheIronBorn <TheIronBorn@users.noreply.github.com>"]
+edition = "2021"
+
+description = "Pruning elements in SIMD vectors (i.e., packing left/compressing elements)"
+repository = "https://github.com/TheIronBorn/simdprune"
+
+keywords = ["simd", "prune", "pack-left", "compress", "gather"]
+categories = ["no-std"]
+
+[dependencies]
+
+[features]
+# enables functions like prune_epi8
+large_tables = []
+# enables the Rust standard library
+std = []
+default = ["large_tables", "std"]
+
+# displays required features in documentation
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+# enables the "std" feature for tests
+[[test]]
+required-features = ["std"]
+name = "std_tests"
