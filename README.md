@@ -14,12 +14,12 @@ If you have AVX512 much of this crate can be performed with those instructions.
 
 # Examples
 
-See [`prune_epi32`].
+See `prune_epi32`.
 
 # Features
 
 All features below are enabled by default.
 
 * **std** - Enables the standard library. Disabling this enables the `no_std` crate attribute.
-* **large_tables** - Enables functions like [`prune_epi8`] which require large tables (>1MB).
+* **large_tables** - Enables functions like `prune_epi8` which require large tables (>1MB).
 Disabling this may speed up compilation.

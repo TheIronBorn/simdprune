@@ -6,6 +6,8 @@ edition = "2021"
 
 description = "Pruning elements in SIMD vectors (i.e., packing left/compressing elements)"
 repository = "https://github.com/TheIronBorn/simdprune"
+documentation = "https://docs.rs/simdprune"
+license = "Apache-2.0"
 
 keywords = ["simd", "prune", "pack-left", "compress", "gather"]
 categories = ["no-std"]
