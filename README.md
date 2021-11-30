@@ -10,6 +10,7 @@ values that have not been deleted.
 Passing a mask of 0 would simply copy the provided vector.
 
 Note that this is the opposite of the mask behavior of AVX512 VCOMPRESS/VPCOMRESS instructions.
+If you have AVX512 much of this crate can be performed with those instructions.
 
 # Examples
 
